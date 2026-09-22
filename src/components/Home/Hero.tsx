@@ -68,7 +68,7 @@ const Hero = () => {
 
   if (!mounted) {
     return (
-      <div className="flex items-center justify-center h-screen bg-white dark:bg-black">
+      <div className="flex items-center justify-center h-screen h-[100dvh] bg-white dark:bg-black">
         <Loading size="xl" />
       </div>
     );
@@ -77,7 +77,7 @@ const Hero = () => {
   return (
     <div
       ref={heroRef}
-      className={`relative w-full min-h-screen overflow-hidden flex items-center justify-center ${
+      className={`relative w-full min-h-screen min-h-[100dvh] overflow-hidden flex items-center justify-center ${
         isModalOpen ? "" : "hero-hide-cursor"
       }`}
     >
