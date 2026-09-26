@@ -77,7 +77,7 @@ const Hero = () => {
   return (
     <div
       ref={heroRef}
-      className= {`relative w-full min-h-screen supports-[min-height:100dvh]:min-h-dvh overflow-hidden flex items-center justify-center ${
+      className={`relative w-full min-h-screen supports-[min-height:100dvh]:min-h-dvh overflow-hidden flex items-center justify-center ${
         isModalOpen ? "" : "hero-hide-cursor"
       }`}
     >
